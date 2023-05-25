@@ -1,0 +1,181 @@
+#include<stdio.h>
+//두 수의 합과 차 리턴
+/*
+int p(int a, int b)
+{
+	int c = a + b;
+
+	return c;
+}
+
+int m(int a, int b)
+{
+	if (a > b)
+	{
+		int c = a - b;
+
+		return c;
+	}
+	else
+	{
+		int c = b - a;
+
+		return c;
+	}
+
+}
+
+void main()
+
+{
+	int num1=0 , num2=0;
+	scanf("%d %d", &num1, &num2);
+
+	int total = p(num1, num2);
+	int total2 = m(num1, num2);
+
+	printf("합 = %d 차 = %d", total, total2);
+
+}
+*/
+//세 수의 평균 함수
+/*
+int g(int a, int b, int c)
+{
+	float grade= (a + b + c) / 3;
+	return grade;
+}
+
+void main()
+
+{
+	int grade1, grade2, grade3;
+	scanf("%d %d %d", &grade1, &grade2, &grade3);
+
+	int total = g(grade1, grade2, grade3);
+
+	printf("%.2f", (float)total);
+
+}*/
+//두 수와 사칙연산을 입력받아 출력
+  /*
+int calc(int num1, char op, int num2)
+{
+	if (op == '+')
+	{
+		return num1 + num2;
+	}
+	else if (op == '-')
+	{
+		return num1 - num2;
+	}
+	else if (op == '*')
+	{
+		return num1 * num2;
+	}
+	else if (op == '/')
+	{
+		return num1 / num2;
+	}
+}
+
+void main()
+
+{
+	int num1, num2;
+	char op;
+	scanf("%d %c %d", &num1, &op, &num2);
+
+	int total = calc(num1, op, num2);
+	printf("%d", total);
+
+
+}
+*/
+//두 수를 입력받아 아래 예와 같이 순서를 바꾸어 출력
+/*
+#include <stdio.h>
+
+void n(int* num, int a)
+{
+	int temp;
+	temp = num[0];
+	num[0] = num[1];
+	num[1] = temp;
+	for (int i = 0; i < 2; i++)
+	{
+		printf("%d\n", num[i]);
+	}
+}
+
+int main(void)
+{
+	int num[2];
+	scanf("%d %d", &num[0], &num[1]);
+	n(num, 2);
+	return 0;
+}
+*/
+//두 수를 입력받아 합과 곱을 출력하세요
+/*
+int g(int a, int b)
+{
+	return a + b;
+}
+int m(int a, int b)
+{
+	return a * b;
+}
+
+void main()
+
+{
+	int n1, n2;
+	scanf("%d %d", &n1, &n2);
+
+	int total1 = g(n1, n2);
+	int total2 = m(n1, n2);
+
+	printf("합 = %d 곱 = %d", total1 , total2);
+}
+
+
+*/
+//재귀함수
+//"recoursive"를 10번 출력
+/*
+void p(int count)
+{
+	if (count == 0)
+	{
+		return;
+	}
+	printf("recoursive\n");
+	p(count - 1);
+}
+int main()
+{
+	p(10);
+	return 0;
+}
+*/
+//자연수 n을 입력받아 n까지의 수를 출력
+#include <stdio.h>
+
+
+void P(int c)
+{
+	scanf("%d", &c);
+	if (c == 0)
+		return;
+	printf("%d \n", c);
+	P(c - 1);
+}
+
+int main(void)
+{
+	int result, num;
+	scanf("%d", &num);
+	result = P(num);
+	return 0;
+}
