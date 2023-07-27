@@ -1,9 +1,7 @@
 당근마켓 클론코딩 후기
 =============
 </hr>
-[코드][link]
-
-[link]: https://github.com/BUJWEB/Carrot-Market.git "Go"
+[Google](https://github.com/BUJWEB/Carrot-Market.git)
 
 어쩌다가 당근마켓?
 -------------
@@ -15,7 +13,7 @@
 진행 날짜
 -------------
 </hr>
-'''<2023.7.17>~<2023.7.26>'''
+<2023.7.17>~<2023.7.26>
 
 
 문제점들
